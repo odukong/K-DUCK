@@ -1,0 +1,159 @@
+.app__navbar{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-yellow);
+
+    padding:1rem 3rem;
+}
+
+.app__navbar-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.app__navbar-logo img{
+    width:200px;
+}
+
+.app__navbar-menu{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left:10rem;
+
+    list-style: none;
+}
+
+.app__navbar-menu-item{
+    margin:0 3rem;
+    color:var(--color-ivory);
+}
+
+.app__navbar-menu-item:hover{
+    color:var(--color-tomato);
+}
+
+.app__navbar-login{
+    flex:1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.app__navbar-login a{
+    margin:0 1rem;
+    text-decoration:none;
+    transition:0.5s ease;
+
+    color:var(--color-ivory);
+}
+
+
+.app__navbar-login a:hover{
+    color:var(--color-tomato);
+}
+
+.app__navbar-login div{
+    width:1px;
+    height:30px;
+    background-color: rgb(255, 192, 192);
+}
+.app__navbar-smallscreen{
+    display:none;
+}
+
+.app__navbar-smallscreen-overlay{
+    position:fixed;
+    top:0;
+    right:-50%;
+    width:50%;
+    height:100vh;
+    background-color: black;
+    opacity: 0.7;
+
+    transition: 1s ease-in-out;
+    flex-direction: column;
+    z-index:5;
+}
+
+.app__navbar-smallscreen-overlay.show{
+    opacity: 1;
+    right:0;
+}
+
+.app__navbar-smallscreen-overlay .overlay__close{
+    cursor: pointer;
+    position:absolute;
+    top:30px;
+    right:30px;
+}
+
+
+.app__navbar-smallscreen-links{
+    list-style: none;
+}
+
+.app__navbar-smallscreen-item{
+    margin:3rem 0;
+    color:var(--color-ivory);
+    font-size:30px;
+}
+
+.app__navbar-smallscreen-item > div{
+    width:30px;
+    height:1px;
+    background-color: rgb(255, 192, 192);
+}
+
+.app__navbar-smallscreen-item:first-child{
+    display:flex;
+    flex-direction: column;
+}
+
+.app__navbar-smallscreen-item:first-child > *{
+    margin:0.5rem 0;  
+}
+
+
+.app__navbar-smallscreen-item:hover{
+    color:var(--color-yellow);
+}
+
+@media screen and (max-width:2000px){
+    .app__navbar-logo img{
+        width:200px;
+    }
+}
+
+@media screen and (max-width:1150px) {
+    .app__navbar-menu{
+        display:none;
+    }
+    .app__navbar-smallscreen{
+        display:flex;
+    }
+    .app__navbar-login{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:650px){
+    .app__navbar{
+        padding:1rem;
+    }
+    .app__navbar-login{
+        display:none;
+    }
+    .app__navbar-logo img{
+        width:130px;
+    }
+
+    .app__navbar-smallscreen-item{
+        font-size:25px;
+    }
+}
