@@ -1,0 +1,79 @@
+.app__middle{
+    background: url('../../assets/middle_bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+.middle_container{
+    display:flex;
+    flex-direction: column;
+
+    padding:2rem 4rem;
+}
+
+.app__middle-header{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 2rem;
+}
+
+.app__middle-header-title{
+    font-size: 30px;
+    padding:1rem;
+}
+
+.app__middle-content{
+    display:flex;
+    justify-content: space-around;
+}
+
+.app__middle-content-title{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width:100%;
+}
+
+.app__middle-content-title-item{
+    color:white;
+    font-size:25px;
+    letter-spacing: -5%;
+
+    padding:20px 30px;
+    margin:20px;
+}
+
+.app__middle-content-img{
+    width:100%;
+    height:100%;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:1150px) {
+    .app__middle-content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:650px){
+    .app__middle-content-title-item{
+        font-size:20px;
+        padding:15px 30px;
+        margin:10px;
+    }
+    .app__middle-content-img img{
+        width:300px;
+        height:300px;
+    }
+}

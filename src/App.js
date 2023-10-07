@@ -1,7 +1,7 @@
 import React from 'react';
 
 import {Navbar} from "./components";
-import {Header} from "./container";
+import {Header,Middle} from "./container";
 import './App.css';
 
 function App() {
@@ -9,6 +9,7 @@ function App() {
     <div>
       <Navbar/>
       <Header/>
+      <Middle/>
     </div>
   );
 }
