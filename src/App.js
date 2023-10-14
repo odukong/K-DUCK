@@ -1,6 +1,5 @@
 import React from 'react';
-
-import {Navbar} from "./components";
+import {Navbar,Footer} from "./components";
 import {Header,Middle,Last} from "./container";
 import './App.css';
 
@@ -11,6 +10,7 @@ function App() {
       <Header/>
       <Middle/>
       <Last/>
+      <Footer/>
     </div>
   );
 }
