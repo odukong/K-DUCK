@@ -1,12 +1,13 @@
 import React,{useState,useEffect,useRef} from 'react';
+import {Link} from "react-router-dom";
 import {MiddleTitle} from "../../components";
 import images from "../../constants/images";
 import './Middle.css';
 
 const boards=[
-        {name:'Concert Review',color:'#3F9793',img:`${images.headphone}`},
-        {name:'Fuzz',color:'#EDE872',img:`${images.fuzz}`},
-        {name:'Promotion',color:'#FCC0CC',img:`${images.megaphone}`}
+        {link:'review',name:'Concert Review',color:'#3F9793',img:`${images.headphone}`},
+        {link:'fuzz',name:'Fuzz',color:'#EDE872',img:`${images.fuzz}`},
+        {link:'promotion',name:'Promotion',color:'#FCC0CC',img:`${images.megaphone}`}
 ];
 //headphone, fuzz,promotion
 const Middle = () => {
@@ -33,7 +34,7 @@ const Middle = () => {
                 <div className="app__middle-content-title">
                     {boards.map((board,index)=>{
                         return(
-                            <MiddleTitle key={index} title={board.name} color={board.color} img={board.img} onMouseEnter={handleTitleHover}/>
+                            <Link to={`${board.link}-board`}><MiddleTitle key={index} title={board.name} color={board.color} img={board.img} onMouseEnter={handleTitleHover}/></Link>
                         )
                     })}
                 </div>

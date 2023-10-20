@@ -7,6 +7,15 @@ import fuzz from "../assets/Fuzz.png";
 import megaphone from "../assets/promotion.png";
 import polaroid from "../assets/two-polar.png";
 import yellow_bg from "../assets/middle_bg.png";
+import pink_paint from "../assets/pink_paint.png";
+import BOYNEXTDOOR from "../assets/Artist_BOYNEXTDOOR.jpg";
+import IVE from "../assets/Artist_IVE.jpg";
+import LESSERAFIM from "../assets/Artist_LESSERAFIM.jpg";
+import NCTdream from "../assets/Artist_NCTdream.jpg";
+import NewJeans from "../assets/Artist_NewJeans.jpg";
+import Riize from "../assets/Artist_Riize.jpg";
+import Zerobaseone from "../assets/Artist_Zerobaseone.jpg";
+import GIDLE from "../assets/Artist_GIDLE.jpg";
 
 export default{
     logo,
@@ -17,5 +26,14 @@ export default{
     fuzz,
     megaphone,
     polaroid,
-    yellow_bg
+    yellow_bg,
+    pink_paint,
+    BOYNEXTDOOR,
+    IVE,
+    LESSERAFIM,
+    NCTdream,
+    NewJeans,
+    Riize,
+    Zerobaseone,
+    GIDLE
 }

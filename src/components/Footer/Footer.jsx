@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from "react-router-dom";
 import { BsGithub,BsInstagram } from 'react-icons/bs';
 import images from "../../constants/images";
 import './Footer.css';

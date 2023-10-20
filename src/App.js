@@ -1,17 +1,20 @@
 import React from 'react';
-import {Navbar,Footer} from "./components";
-import {Header,Middle,Last} from "./container";
+import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
+import {Main,Artist,Board,Sale} from "./page";
 import './App.css';
 
 function App() {
   return (
-    <div>
-      <Navbar/>
-      <Header/>
-      <Middle/>
-      <Last/>
-      <Footer/>
-    </div>
+    <>
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<Main/>}/>
+          <Route path="/artist" element={<Artist/>}/>
+          <Route path="/select-board" element={<Board/>}/>
+          <Route path="/sale" element={<Sale/>}/>
+        </Routes>
+      </Router>
+    </>
   );
 }
 

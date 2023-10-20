@@ -1,4 +1,5 @@
-import React,{useState,useRef} from "react";
+import React,{useState} from "react";
+import {Link} from "react-router-dom";
 import {BsMoonFill,BsMoonStarsFill} from "react-icons/bs";
 
 import images from "../../constants/images";
@@ -15,17 +16,17 @@ const Navbar = () => {
     return (
         <div className="app__navbar">
             <div className="app__navbar-logo">
-                <img src={images.logo} alt="logo"/>
+                <Link to="/"><img src={images.logo} alt="logo"/></Link>
             </div>
             <ul className="app__navbar-menu">
-                <li className="app__navbar-menu-item p__eng"><a href="#artist">Artist</a></li>
-                <li className="app__navbar-menu-item p__eng"><a href="#board">Board</a></li>
-                <li className="app__navbar-menu-item p__eng"><a href="#sale">Sale</a></li>
+                <li className="app__navbar-menu-item p__eng"><Link to="/artist">Artist</Link></li>
+                <li className="app__navbar-menu-item p__eng"><Link to="/select-board">Board</Link></li>
+                <li className="app__navbar-menu-item p__eng"><Link to="/sale">Sale</Link></li>
             </ul>
             <div className="app__navbar-login">
-                <a href="#login" className="p__eng">Log In</a>
+                <Link to="#login" className="p__eng">Log In</Link>
                 <div/>
-                <a href="#register" className="p__eng">Register</a>
+                <Link to="#register" className="p__eng">Register</Link>
             </div>
             <div className="app__navbar-smallscreen">
                 <BsMoonFill color="#FFF5D1" fontSize={30} onClick={handleToggleMenu}/>
@@ -33,13 +34,13 @@ const Navbar = () => {
                         <BsMoonStarsFill className="overlay__close" color="#FFF5D1" fontSize={30} onClick={handleToggleMenu}/>
                         <ul className="app__navbar-smallscreen-links">
                             <li className="app__navbar-smallscreen-item">
-                                <a href="#login" className="p__eng">Log In</a>
+                                <Link to="#login" className="p__eng">Log In</Link>
                                 <div/>
-                                <a href="#register" className="p__eng">Register</a>
+                                <Link to="#register" className="p__eng">Register</Link>
                             </li>
-                            <li className="app__navbar-smallscreen-item p__eng"><a href="#artist">Artist</a></li>
-                            <li className="app__navbar-smallscreen-item p__eng"><a href="#board">Board</a></li>
-                            <li className="app__navbar-smallscreen-item p__eng"><a href="#sale">Sale</a></li>
+                            <li className="app__navbar-smallscreen-item p__eng"><Link to="/artist">Artist</Link></li>
+                            <li className="app__navbar-smallscreen-item p__eng"><Link to="/select-board">Board</Link></li>
+                            <li className="app__navbar-smallscreen-item p__eng"><Link to="/sale">Sale</Link></li>
                         </ul>
                     </div>
             </div>
