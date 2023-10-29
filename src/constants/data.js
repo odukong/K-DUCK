@@ -8,7 +8,7 @@ const artists=[
         debut_album:"YOUTH IN THE SHADE",
         insta_Url:"https://www.instagram.com/zb1official/",
         twitter_Url:"https://twitter.com/ZB1_official",
-        greetings:"둘, 셋 D1, Be the ONE! 안녕하세요, ZEROBASEONE입니다! Let's show them what we got! ZEROBASEONE"
+        greetings:"둘, 셋 D1, Be the ONE! 안녕하세요, ZEROBASEONE입니다!"
     },
     {
         imgUrl:images.NCTdream,
@@ -79,6 +79,16 @@ const artists=[
         insta_Url:"https://www.instagram.com/official_g_i_dle/",
         twitter_Url:"https://twitter.com/G_I_DLE",
         greetings:"(하나, 둘) 아이~! 안녕하세요 아이들입니다!"
+    },
+    {
+        imgUrl:images.KISSOFLIFE,
+        name:'KISS OF LIFE',
+        members:'쥴리(리더), 나띠, 벨, 하늘',
+        debut_date:"2023.07.05",
+        debut_album:"KISS OF LIFE",
+        insta_Url:"https://www.instagram.com/kissoflife_s2/",
+        twitter_Url:"https://twitter.com/KISSOFLIFE_S2",
+        greetings:"안녕하세요, KISS OF LIFE입니다!"
     }
 ]
 export default{

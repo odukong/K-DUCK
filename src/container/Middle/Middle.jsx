@@ -34,7 +34,7 @@ const Middle = () => {
                 <div className="app__middle-content-title">
                     {boards.map((board,index)=>{
                         return(
-                            <Link to={`${board.link}-board`}><MiddleTitle key={index} title={board.name} color={board.color} img={board.img} onMouseEnter={handleTitleHover}/></Link>
+                            <Link to={`/${board.link}-board`}><MiddleTitle key={index} title={board.name} color={board.color} img={board.img} onMouseEnter={handleTitleHover}/></Link>
                         )
                     })}
                 </div>

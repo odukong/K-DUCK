@@ -9,7 +9,7 @@ import './Navbar.css';
 const Navbar = () => {
     // nav 이동 경로 router로 추후 변경
     const [toggleMenu,setToggleMenu]=useState(false);
-
+    
     const handleToggleMenu = () => {
         setToggleMenu(prevToggleMenu => !prevToggleMenu);
     };

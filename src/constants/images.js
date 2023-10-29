@@ -16,6 +16,7 @@ import NewJeans from "../assets/Artist_NewJeans.jpg";
 import Riize from "../assets/Artist_Riize.jpg";
 import Zerobaseone from "../assets/Artist_Zerobaseone.jpg";
 import GIDLE from "../assets/Artist_GIDLE.jpg";
+import KISSOFLIFE from "../assets/Artist_KISSOFLIFE.jpg";
 
 export default{
     logo,
@@ -35,5 +36,6 @@ export default{
     NewJeans,
     Riize,
     Zerobaseone,
-    GIDLE
+    GIDLE,
+    KISSOFLIFE
 }
